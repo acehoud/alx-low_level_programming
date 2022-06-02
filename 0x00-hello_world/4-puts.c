@@ -2,7 +2,7 @@
 
 /*
  *Description
- *main - this is a starting point of the program
+ *main - program entry point
  *Retrun: 0 if run succesful
  */
 
