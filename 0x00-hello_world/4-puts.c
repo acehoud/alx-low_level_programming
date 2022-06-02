@@ -2,7 +2,7 @@
 
 /*
  * main - program entry point
- * Retrun: 0
+ * Return: 0 if successfully
  */
 
 int main(void)
