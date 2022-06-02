@@ -1,9 +1,8 @@
 #include <stdio.h>
 
 /*
- *Description
- *main - program entry point
- *Retrun: 0 if run succesful
+ * main - program entry point
+ * Retrun: 0
  */
 
 int main(void)
