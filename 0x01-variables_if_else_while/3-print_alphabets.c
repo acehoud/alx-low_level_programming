@@ -17,10 +17,10 @@ int main(void)
 		x = x + 1;
 	}
 
-	while (y <= 'Z')
+	while (y <= 'Z')	
 	{
-			putchar(y);
-			y = y + 1;
+	       	putchar(y);
+		y = y + 1;
 	}
 
 	putchar('\n');
