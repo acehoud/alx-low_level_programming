@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _isAlpha - Function prototype
+ * _isalpha - Function prototype
  * Description : checks if a charter is a letter
  * @c: ASCII charater to be check
- * Return: 1 if is a letter otherwise 0
+ * Return: 1 if is a letter else 0
  */
 
 int _isalpha(int c)
