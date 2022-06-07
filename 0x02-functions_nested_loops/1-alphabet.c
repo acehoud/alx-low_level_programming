@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - program entry point
+ * void print_alphabet - Function prototype
  * Description: function prototype to print lowercase
  * Return: void
  */
