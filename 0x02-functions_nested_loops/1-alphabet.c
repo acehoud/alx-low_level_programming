@@ -2,13 +2,13 @@
 
 /**
  * main - program entry point
- * Description: use _function prototype
- * void
+ * Description: function prototype to print lowercase
+ * Return: void
  */
 
 void print_alphabet(void)
 {
-	char j ='a';
+	char j = 'a';
 
 	while (j <= 'z')
 	{
