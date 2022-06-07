@@ -11,7 +11,7 @@ int _islower(int c);
 
 int main(void)
 {
-	check = _islower(c);
+	int check = _islower(c);
 }
 
 int _islower(int c)
