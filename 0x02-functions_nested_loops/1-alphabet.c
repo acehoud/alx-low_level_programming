@@ -2,7 +2,7 @@
 
 /**
  * main - prgram entry point
- * Description: use _putchar
+ * Description: use _function prototype
  * Return: 0
  */
 
@@ -16,7 +16,5 @@ void print_alphabet(void)
 		j++;
 	}
 	
-	_putchar('\n');
-
-	
+	_putchar('\n')
 }
