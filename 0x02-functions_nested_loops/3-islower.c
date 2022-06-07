@@ -4,7 +4,7 @@
  * _islower - Function prototype
  * Description: This islower checks if character is lowercase.
  * @c: ASCII character to be valuated
- * ReturN: 1 if lowercase else othwerise 0
+ * Return: 1 if lowercase else othwerise 0
  */
 
 int _islower(int c)
