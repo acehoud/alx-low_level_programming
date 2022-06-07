@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * main - starting point for program
- * Return 0
+ * main - program entry point
+ * Description - this output _putchar
+ * Return: 0
  */
 
 int main(void)
