@@ -2,14 +2,14 @@
 
 /**
  * int _islower - Prototype function
- * Description: This checks between lower case
+ * Description: This islower checks between lower case
  * @c: ASCII to be valuated
- * Returns: 1 if successful othwerise 0
+ * ReturN: 1 if successful else othwerise 0
  */
 
 int _islower(int c)
 {
-	int _iamlower = c >= 97 && c <= 122 ? 1 : 0;
-	
-	return (_iamlower);
+	int iam_lower = c >= 97 && c <= 122 ? 1 : 0;
+
+	return (iam_lower);
 }
