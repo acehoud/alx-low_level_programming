@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * main - prgram entry point
+ * main - program entry point
  * Description: use _function prototype
- * Return: 0
+ * void
  */
 
 void print_alphabet(void)
@@ -16,5 +16,5 @@ void print_alphabet(void)
 		j++;
 	}
 	
-	_putchar('\n')
+	_putchar('\n');
 }
