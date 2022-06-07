@@ -1,27 +1,15 @@
-#include <ctype.h>
 #include "main.h"
 
 /**
  * int _islower - Prototype function
  * Description: This checks between lower case
- * Returns: 1
+ * @c: ASCII to be valuated
+ * Returns: 1 if successful othwerise 0
  */
-
-int _islower(int c);
-
-int main(void)
-{
-	int check = _islower(c);
-}
 
 int _islower(int c)
 {
-	if (c.islower)
-	{
-		return (1);
-	}
-	else
-	{
-		return (0);
-	}
+	int _iamlower = c >= 97 && c <= 122 ? 1 : 0;
+	
+	return (_iamlower);
 }
