@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * void print_alphabet - Function prototype
- * Description: function prototype to print lowercase
+ * print_alphabet - Function prototype
+ * Description: Print letters of alphabets in lowercases
  * Return: void
  */
 
@@ -15,6 +15,6 @@ void print_alphabet(void)
 		_putchar(j);
 		j++;
 	}
-	
-	_putchar('\n');
+
+	_putchar(j);
 }
