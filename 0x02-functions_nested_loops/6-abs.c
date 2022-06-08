@@ -7,7 +7,7 @@
  * Return: absolute value of a number
  */
 
-int _abs(int)
+int _abs(int n)
 {
 	int j = n >= 0 ? n : n * - 1;
 
