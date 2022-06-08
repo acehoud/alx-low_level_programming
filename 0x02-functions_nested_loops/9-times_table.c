@@ -20,7 +20,7 @@ void times_table(void)
 			int b = a / 10;
 			int c = a % 10;
 
-			if (a != 0)
+			if (j != 0)
 			{
 				if (a < 10)
 				{
