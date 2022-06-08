@@ -8,19 +8,29 @@
 
 int print_sign(int n)
 {
-	switch(n)
+	int j;
+	char k;
+
+	if ( n <= 0)
 	{
-	case n > 0:
-		_putchar('+');
-		return (1);
-		break;
-	case n == 0:
-		_putchar('0');
-		return  (0);
-		break;
-	case n < 0:
-		_putchar('-');
-		return (-1);
-		break;
+		if (n == 0)
+		{
+			j = 0;
+			k = '0';
+		}
+		else
+		{
+			j = -1;
+			k = '-';
+		}
 	}
+	else
+	{
+		j = 1;
+		k = '+';
+	}
+
+	_putchar(k);
+
+	return (j);
 }
