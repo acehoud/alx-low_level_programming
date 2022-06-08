@@ -14,11 +14,11 @@ void times_table(void)
 	{
 		int j
 			;
-		for ( j = 0; j <= 9; j++)
+		for (j = 0; j <= 9; j++)
 		{
 			int a = i * j;
 			int b = a / 10;
-			int c = a / 10;
+			int c = a % 10;
 
 			if (a != 0)
 			{
