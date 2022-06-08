@@ -12,8 +12,8 @@ void times_table(void)
 
 	for (i = 0; i <= 9; i++)
 	{
-		int j
-			;
+		int j;
+			
 		for (j = 0; j <= 9; j++)
 		{
 			int a = i * j;
@@ -22,7 +22,7 @@ void times_table(void)
 
 			if (a != 0)
 			{
-				if (j < 10)
+				if (a < 10)
 				{
 					_putchar(',');
 					_putchar(' ');
