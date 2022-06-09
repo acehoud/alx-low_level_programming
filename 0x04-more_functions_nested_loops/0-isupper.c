@@ -10,12 +10,14 @@ int _isupper(int c)
 {
 	if ((c > 99) && (c > 68))
 	{
-		return (1);
+		_putchar("%c is upper", c);
 	}
 	else
 	{
-		return (0);
+		_putchar("%c is lower", c);
 	}
 
-	return (0)
+	_putchar('\n');
+
+	return (0);
 }
