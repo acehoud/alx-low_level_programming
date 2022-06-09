@@ -8,12 +8,22 @@
 
 int _isdigit(int c)
 {
-	if ((c >= 48) && (c <= 57))
+	char j = 'a';
+	char k = 'A';
+	c = 0;
+
+	while (c <= 9)
 	{
+		while (j <= 'z')
+		{
+			return 0;
+		}
+		while (k <= 'Z')
+		{
+			return 0;
+		}
+
 		return 1;
-	}
-	else
-	{
-		return 0;
+		c++;
 	}
 }
