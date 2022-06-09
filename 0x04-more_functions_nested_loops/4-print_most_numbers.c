@@ -8,18 +8,18 @@
 
 void print_most_numbers(void)
 {
-	int j = 0;
+	int j = '0';
 
-	while (j <= 9)
+	while (j <= '9')
 	{
-		if (j == 2)
+		if (j == '2')
 		{
-			j = j + 1;
+			j++;
 			continue;
 		}
-		else if (j == 4)
+		else if (j == '4')
 		{
-			j = j + 1;
+			j++;
 			continue;
 		}
 
