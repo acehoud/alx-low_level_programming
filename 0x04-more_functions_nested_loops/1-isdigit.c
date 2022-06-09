@@ -8,17 +8,17 @@
 
 int _isdigit(int c)
 {
-	char j = 'a';
-	char k = 'A';
+	char c = 'a'
+	char c = 'A';
 	c = 0;
 
 	while (c <= 9)
 	{
-		while (j <= 'z')
+		while (c <= 'z')
 		{
 			return 0;
 		}
-		while (k <= 'Z')
+		while (c <= 'Z')
 		{
 			return 0;
 		}
