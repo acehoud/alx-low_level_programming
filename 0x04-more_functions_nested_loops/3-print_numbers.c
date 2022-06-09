@@ -8,7 +8,7 @@
 
 void print_numbers(void)
 {
-	int j = 0;
+	int j;
 
 	while (j <= 9)
 	{
