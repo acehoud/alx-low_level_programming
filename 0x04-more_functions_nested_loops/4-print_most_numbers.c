@@ -10,20 +10,10 @@ void print_most_numbers(void)
 {
 	int j = '0';
 
-	while (j <= '9')
+	for (; j <= '9'; j++)
 	{
-		if (j == '2')
-		{
-			j++;
-			continue;
-		}
-		else if (j == '4')
-		{
-			j++;
-			continue;
-		}
-
-		_putchar(j);
+		if (j != '2' && i= j != '4')
+			_putchar(j);
 	}
 
 	_putchar('\n');
