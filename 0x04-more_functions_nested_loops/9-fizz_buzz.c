@@ -3,6 +3,7 @@
 /**
  * main - Entry point for a program
  * Description: print number 1 - 100, and fuzz for multiple of 3
+ * with Fizz, multiple of 5 with Buzz and both 5 and 3 FizzBuizz
  * Return: 0
  */
 
@@ -26,7 +27,7 @@ int main(void)
 		}
 		else
 		{
-			printf("%d ",i);
+			printf("%d ", i);
 		}
 	}
 	printf("Buzz\n");
