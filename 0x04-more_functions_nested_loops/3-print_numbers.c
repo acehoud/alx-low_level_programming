@@ -2,7 +2,7 @@
 
 /**
  * print_numbers-  function that prints the numbers
- * Description: Print numbers from 0 - 9 and store on _putchar
+ * Description: Print numbers from 0 - 9 
  * Return: void
  */
 
