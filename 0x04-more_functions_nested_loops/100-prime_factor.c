@@ -1,9 +1,10 @@
 #include <stdio.h>
 
 /**
- * main - entry point
- * Description: roothsqaure
- * Return - void
+ * main - Program entry point
+ * Description: program that finds and prints the largest prime factor of the number
+ * (612852475143)
+ * Return: void
  */
 
 int main(void)
