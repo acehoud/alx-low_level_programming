@@ -2,7 +2,7 @@
 
 /**
  * main - Program entry point
- * Description: begin with the square root of the number and work your way through
+ * Description: Start with the square root of the number and work your way down
  * until we find the largest prime factor of the number 612852475143.
  * Return: void
  */
@@ -16,6 +16,7 @@ int main(void)
 		while (n % i == 0 && n != i)
 			n /= i;
 	}
+
 	printf("%lu\n", n);
 
 	return (0);
