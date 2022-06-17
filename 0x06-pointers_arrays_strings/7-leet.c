@@ -19,7 +19,7 @@ char *leet(char *str)
 
 		for (j = 0; x < 5; j++)
 		{
-			if (str[i] != lower_letter[j] && str[i] != lower_letter[j])
+			if (str[i] != lower_letter[j] && str[i] != upper_letter[j])
 				continue;
 
 			str[i] = num[j];
