@@ -9,17 +9,17 @@
 char *leet(char *str)
 {
 	int i;
-	char lower_letter[] = "aeotl";
-	char upper_letter[] = "AEOTL";
+	char lower[] = "aeotl";
+	char upper[] = "AEOTL";
 	char num[] = "43071";
 
 	for (i = 0; str[i]; i++)
 	{
 		int j;
 
-		for (j = 0; x < 5; j++)
+		for (j = 0; j < 5; j++)
 		{
-			if (str[i] != lower_letter[j] && str[i] != upper_letter[j])
+			if (str[i] != lower[j] && str[i] != upper[j])
 				continue;
 
 			str[i] = num[j];
