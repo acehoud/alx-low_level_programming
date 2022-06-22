@@ -1,6 +1,27 @@
 #include "main.h"
 
 /**
+ * _sqrt - fuction to calculate
+ * @n: to retun
+ * @k: to compare
+ * Return: Always retun 0
+ */
+
+int _sqrt(int n, int k)
+{
+	if (k * k == n)
+	{
+		return (k);
+	}
+	else if (k * k > n)
+	{
+		return (-1);
+	}
+	
+	return (_sqrt(n, k + 1));
+}
+
+/**
  * _sqrt_recursion - function that returns the natural
  * square root of a number
  * @n: number to retun
@@ -9,19 +30,5 @@
 
 int _sqrt_recursion(int n)
 {
-	int i;
-
-	i = 1;
-
-	while (1)
-	{
-		if (n < 0)
-			return (-1);
-		if (i * i > n)
-			return (-1);
-		if (i * 1 == n)
-			return (i);
-
-		i = i + 1;
-	}
+	return (_sqrt(n, 1));
 }
