@@ -51,7 +51,7 @@ char **strtow(char *str)
 
 		if (!t)
 		{
-			for (k = j -1; k >= 0; k--)
+			for (k = j - 1; k >= 0; k--)
 			{
 				free(s[k]);
 			}
