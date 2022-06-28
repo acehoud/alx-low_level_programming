@@ -54,7 +54,7 @@ char **strtow(char *str)
 			j++;
 			s[count] = (char *)malloc(j * sizeof(char));
 			j--;
-			if(s[count] == NULL)
+			if (s[count] == NULL)
 			{
 				for (k = 0; k < count; k++)
 					free(s[k]);
