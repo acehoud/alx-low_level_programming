@@ -43,7 +43,7 @@ char **strtow(char *str)
 	s = (char **)malloc(num * sizeof(char *));
 	if (s == NULL)
 		return (NULL);
-	s[numb - 1] = NULL;
+	s[num - 1] = NULL;
 	i = 0;
 	while (str[i])
 	{
