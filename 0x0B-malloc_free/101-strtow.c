@@ -42,7 +42,6 @@ char **strtow(char *str)
 			str++;
 		}
 		siz = 0;
-		
 		while (*(str + siz) != ' ' && *(str + siz))
 		{
 			siz += 1;
@@ -73,24 +72,3 @@ char **strtow(char *str)
 	*(s + j) = NULL;
 	return (s);
 }
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-101-strtow.c[+] [unix] (01:59 01/01/1970)                                        5,13 All
--- INSERT --
-
