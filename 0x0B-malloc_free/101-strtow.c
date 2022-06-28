@@ -1,5 +1,28 @@
 #include "main.h"
 #include <stdlib.h>
+/**
+ * word_count - function
+ * @x: string to count
+ * Return: Always return 0
+ */
+
+int word_count(char *x)
+{
+	int i, n = 0;
+
+	for (i = 0; x[i]; i++)
+	{
+		if (x[i] == ' ')
+		{
+			if (x[i + 1] != ' ' && x[i + 1] != '\0')
+				n++;
+		}
+		else if (i == 0)
+			n++;
+	}
+	n++;
+	return (n);
+}
 
 /**
  * strtow - function that splits a string into words
@@ -9,66 +32,44 @@
 
 char **strtow(char *str)
 {
-	int i = 0, j = 0, k = 0;
-	int siz = 0, tota = 0;
-	char **s, *t;
+	int i, j, k, l, num = 0, count = 0;
+	char **s;
 
-	if (!str || !*str)
+	if (str == NULL || *str == '\0')
 		return (NULL);
-
-	while (*(str + i))
-	{
-		if (*(str + i) != ' ')
-		{
-			if (*(str + i + 1) == ' ' || *(str + i + 1) == 0)
-				tota += 1;
-		}
-		i++;
-	}
-
-	if (tota == 0)
+	num = word_count(str);
+	if (num == 1)
 		return (NULL);
-	tota += 1;
-	s = malloc(sizeof(char *) * tota);
-
-	if (!s)
+	s = (char **)malloc(num * sizeof(char *));
+	if (s == NULL)
 		return (NULL);
+	s[numb - 1] = NULL;
 	i = 0;
-
-	while (*str)
+	while (str[i])
 	{
-		while (*str == ' ' && *str)
+		if (str[i] != ' ' && (i == 0 || str[i - 1] == ' '))
 		{
-			str++;
-		}
-		siz = 0;
-		while (*(str + siz) != ' ' && *(str + siz))
-		{
-			siz += 1;
-		}
-		siz += 1;
-		t = malloc(sizeof(char) * siz);
-
-		if (!t)
-		{
-			for (k = j - 1; k >= 0; k--)
-			{
-				free(s[k]);
-			}
-			free(s);
-			return (NULL);
-		}
-
-		for (k = 0; k < (siz - 1); k++)
-		{
-			*(t + k) = *(str++);
-		}
-		*(t + k) = '\0';
-		*(s + j) = t;
-
-		if (j < (tota - 1))
+			for (j = 1; str[i + j] != ' ' && str[i + j]; j++)
+				;
 			j++;
+			s[count] = (char *)malloc(j * sizeof(char));
+			j--;
+			if(s[count] == NULL)
+			{
+				for (k = 0; k < count; k++)
+					free(s[k]);
+				free(s[num - 1]);
+				free(s);
+				return (NULL);
+			}
+			for (l = 0; l < j; l++)
+				s[count][l] = str[i + l];
+			s[count][l] = '\0';
+			count++;
+			i += j;
+		}
+		else
+			i++;
 	}
-	*(s + j) = NULL;
 	return (s);
 }
