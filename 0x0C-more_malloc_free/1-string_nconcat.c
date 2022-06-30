@@ -38,7 +38,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		S1 = &nul;
 
 	if (s2 == NULL)
-		S2 = &null;
+		S2 = &nul;
 
 	size1 = _strlen(s1);
 	size2 = _strlen(s2);
@@ -57,7 +57,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		p[I++] = s1[i++];
 	i = 0;
 	while (s2[i] != '\0' && n-- != 0)
-                p[I++] = s2[i++];
+	{
+		p[I++] = s2[i++];
+	}
 	p[I] = '\0';
 
 	return (p);
