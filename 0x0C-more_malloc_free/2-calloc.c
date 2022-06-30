@@ -1,26 +1,6 @@
 #include "main.h"
-
-/**
- * _memset - copy chr
- * @s: string
- * @b: input
- * @n: bytes
- * Return: string
- */
-
-char *_memset(char *s, char b, unsigned int n)
-{
-	unsigned int i;
-
-	i = 0;
-
-	while (i < n)
-	{
-		s[i] = b;
-		i++;
-	}
-	return (0);
-}
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * _calloc -  function that allocates memory
@@ -32,16 +12,21 @@ char *_memset(char *s, char b, unsigned int n)
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *arr;
+	void *arr = NULL;
+	unsigned int i;
+	unsigned int j;
+	char *k;
 
 	if (size == 0 || nmemb == 0)
 		return (NULL);
-	arr = malloc(nmemb * size);
-
-	if (arr == NULL)
+	j = nmemb * size;
+	arr = malloc(j);
+	k = (char *)arr;
+	if (k != NULL)
 	{
-		return (NULL);
+		for (i = 0; i < j; i++)
+			k[i] = 0;
+		return (k);
 	}
-	_memset(arr, 0, (nmemb * size));
-	return (arr);
+	return (NULL);
 }
