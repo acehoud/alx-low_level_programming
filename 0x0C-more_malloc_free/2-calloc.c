@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdion.h>
-#include <stdlib.h>
 
 /**
  * _memset - copy chr
