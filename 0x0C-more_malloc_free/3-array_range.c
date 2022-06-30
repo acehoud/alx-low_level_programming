@@ -3,7 +3,8 @@
 #include <stdlib.h>
 
 /**
- * array_range - function that creates an array of integers.
+ * array_range - function that creates an
+ * array of integers
  * @min: minimum
  * @max: maximum
  * Return: pointer too an array
