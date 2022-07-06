@@ -12,7 +12,7 @@
 
 int main(int argc, char *argv[])
 {
-	int Z;
+	int R;
 
 	if (argc != 4)
 	{
@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	Z = (*get_op_func(argv[2]))(atoi(argv[1]), atoi(argv[3]));
+	R = (*get_op_func(argv[2]))(atoi(argv[1]), atoi(argv[3]));
 	printf("%d\n", R);
 
 	return (0);
