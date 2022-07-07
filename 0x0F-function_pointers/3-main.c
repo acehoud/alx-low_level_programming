@@ -12,16 +12,16 @@
 
 int main(int argc, char *argv[])
 {
-	int R;
+	int S;
 
 	if (argc != 4)
 	{
 		printf("Error\n");
-		exit(99);
+		exit(98);
 	}
 
-	R = (*get_op_func(argv[2]))(atoi(argv[1]), atoi(argv[3]));
-	printf("%d\n", R);
+	S = (*get_op_func(argv[2]))(atoi(argv[1]), atoi(argv[3]));
+	printf("%d\n", S);
 
 	return (0);
 }
