@@ -1,5 +1,6 @@
 #include "variadic_functions"
 #include <stdarg.h>
+#include <stdio.h>
 
 /**
  * um_them_all - function that returns the
@@ -22,7 +23,7 @@ int sum_them_all(const unsigned int n, ...)
 		{
 			sum += va_arg(arguments, int);
 		}
-		va_end(argumnts);
+		va_end(arguments);
 	}
 	return (sum);
 }
