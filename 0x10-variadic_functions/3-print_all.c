@@ -57,7 +57,7 @@ void print_string(va_list arg)
 
 	str = va_arg(arg, char *);
 	if (str == NULL)
-	{	
+	{
 		printf("(nil)");
 		return;
 	}
@@ -99,8 +99,8 @@ void print_all(const char * const format, ...)
 		}
 
 		i++;
-	}		
-
+	}
+	
 	printf("\n");
 	va_end(args);
 }
