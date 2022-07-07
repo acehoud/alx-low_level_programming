@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * um_them_all - function that returns the
+ * sum_them_all - function that returns the
  * sum of all its parameters
  * @n: numb of args
  *
