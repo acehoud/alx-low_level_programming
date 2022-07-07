@@ -5,7 +5,7 @@
 /**
  * main - entry point
  * @argc: number of lines
- * argv: array
+ * @argv: an array
  *
  * Return: Always return 0;
  */
